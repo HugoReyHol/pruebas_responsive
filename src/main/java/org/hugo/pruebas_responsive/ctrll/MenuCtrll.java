@@ -18,6 +18,7 @@ public class MenuCtrll {
     public HBox hbContenido;
 
     public void setMinHW(Stage stage) {
+        // Espera a que se genere la ventana para añadir los marcos dentro del tamaño mínimo y sea consistente entre SO
         ChangeListener<Number> changeListener = new ChangeListener<>() {
             @Override
             public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
